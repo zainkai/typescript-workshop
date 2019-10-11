@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "check": "tsc ./index.ts --noEmit",
-    "start": "npm run check && babel-node --extensions \".ts\" ./index.ts"
+    "start": "npm run check && babel-node --extensions \".ts\" ./index.ts",
+    "problem": "tsc ./problem.ts --noEmit && babel-node --extensions \".ts\" ./problem.ts"
   },
   "author": "Kevin Turkington",
   "license": "ISC",
