@@ -1,0 +1,24 @@
+{
+  "name": "typescript-workshop",
+  "version": "1.0.0",
+  "description": "a learning workshop in typescript for javascript engineers",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc ./index.ts --noEmit",
+    "start": "npm run check && babel-node --extensions \".ts\" ./index.ts"
+  },
+  "author": "Kevin Turkington",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.6.4",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-plugin-transform-class-properties": "^6.24.1"
+  },
+  "devDependencies": {
+    "@types/node":"^12.7.12",
+    "jest": "^24.9.0"
+  }
+}
